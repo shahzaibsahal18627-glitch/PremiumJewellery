@@ -31,7 +31,7 @@ const PageWrapper = ({ children }) => {
 
 function App() {
   return (
-    <BrowserRouter basename="/Premium-Jewellery">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <CartProvider>
         <WishlistProvider>
           <div className="min-h-screen bg-[#050505] text-white">
